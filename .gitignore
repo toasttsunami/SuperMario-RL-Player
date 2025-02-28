@@ -1,5 +1,9 @@
 *.log
 node_modules/
 .env
-/vis
-/models
+models/*
+__pycache__
+__pycache__/*
+__pycache__copy/*
+.vscode/*
+

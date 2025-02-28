@@ -248,7 +248,6 @@ class PPOAgent:
                     torch.clamp(prob_ratio, 1 - self.policy_clip, 1 + self.policy_clip)
                     * advantage[batch]
                 )
-
                 # Add entropy bonus
                 entropy = dist.entropy().mean()
                 # print(f"Entropy: {entropy}")
